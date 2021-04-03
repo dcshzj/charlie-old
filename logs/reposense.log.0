@@ -1,25 +1,31 @@
-Apr 03, 2021 8:15:51 AM reposense.RepoSense getRepoConfigurations
+Apr 03, 2021 8:19:55 AM reposense.RepoSense getRepoConfigurations
 WARNING: No valid configurations in the author-config.csv.
 reposense.parser.InvalidCsvException: No valid configurations in the author-config.csv.
 	at reposense.parser.CsvParser.parse(CsvParser.java:95)
 	at reposense.RepoSense.getRepoConfigurations(RepoSense.java:114)
 	at reposense.RepoSense.main(RepoSense.java:64)
 
-Apr 03, 2021 8:15:52 AM reposense.report.RepoCloner spawnCloneProcess
+Apr 03, 2021 8:19:56 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/reposense/testrepo-Charlie.git...
-Apr 03, 2021 8:15:52 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 03, 2021 8:19:56 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/reposense/testrepo-Charlie.git to complete...
-Apr 03, 2021 8:15:53 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 03, 2021 8:20:00 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/reposense/testrepo-Charlie.git completed!
-Apr 03, 2021 8:15:53 AM reposense.report.ReportGenerator analyzeRepos
+Apr 03, 2021 8:20:00 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/1] Analyzing https://github.com/reposense/testrepo-Charlie.git (master)...
-Apr 03, 2021 8:15:53 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 03, 2021 8:20:01 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/reposense/testrepo-Charlie.git (master) does not contain a standalone config file.
-Apr 03, 2021 8:15:53 AM reposense.report.ReportGenerator updateAuthorList
+Apr 03, 2021 8:20:01 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/reposense/testrepo-Charlie.git (master) has no authors specified, using all authors by default.
-Apr 03, 2021 8:15:53 AM reposense.report.ReportGenerator analyzeRepos
-WARNING: No authors found with commits for https://github.com/reposense/testrepo-Charlie.git (master).
-Apr 03, 2021 8:15:53 AM reposense.report.ReportGenerator generateReposReport
+Apr 03, 2021 8:20:01 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/reposense/testrepo-Charlie.git (master)...
+Apr 03, 2021 8:20:03 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/reposense/testrepo-Charlie.git (master)...
+Apr 03, 2021 8:20:04 AM reposense.authorship.FileInfoExtractor extractFileInfos
+INFO: Extracting relevant file info from https://github.com/reposense/testrepo-Charlie.git (master)...
+Apr 03, 2021 8:20:13 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/reposense/testrepo-Charlie.git (master) completed!
+Apr 03, 2021 8:20:13 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/charlie-old/charlie-old/reposense-report
-Apr 03, 2021 8:15:53 AM reposense.RepoSense main
-INFO: Elapsed processing time: 1.99 second(s)
+Apr 03, 2021 8:20:14 AM reposense.RepoSense main
+INFO: Elapsed processing time: 18.98 second(s)
